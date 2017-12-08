@@ -1,0 +1,66 @@
+.container {
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 30%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("https://www.w3schools.com/css/searchicon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+.btn {
+  position: relative;
+  margin-left: 10px;
+  background-color: #4caf50;
+  border: none;
+  font-size: 22px;
+  color: #ffffff;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.btn:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+.nothing-yet {
+  display: block;
+  margin-top: 44px;
+  font-size: 44px;
+}
+
+.nothing-yet-hidden {
+  display: none;
+}
+
+#rando-gliph-img {
+  padding: 40px;
+  width: 80%;
+}
